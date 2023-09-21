@@ -2,6 +2,7 @@
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
 
+
 const page1 = {
   title: 'The awesome page',
   likes: 100,
@@ -18,6 +19,13 @@ const page2 = {
   likes: 5,
   accounts: ['Alex'],
   status: 'close',
+}
+
+type page3 = {
+  title: string,
+  likes: number,
+  accounts: string[],
+  status: 'open' | 'close',
 }
 
 export {};
